@@ -14,11 +14,13 @@ const [deliveryscore, setdeliveryscore] = useState(0);
     <div className="App">
       <Header />
       <div className="shopfront">
-        <Deliveryoptions deliveryscore={deliveryscore} setdeliveryscore={setdeliveryscore}/>
-        <Scoretotals scoretotals={scoretotals} deliveryscore={deliveryscore}/>
+        
       </div>
      <Mission/>
-     <ProductTile/>
+     <ProductTile setScoretotals={setScoretotals} scoretotals={scoretotals}/>
+     <Deliveryoptions deliveryscore={deliveryscore} setdeliveryscore={setdeliveryscore}/>
+        <Scoretotals scoretotals={scoretotals} deliveryscore={deliveryscore}/>
+
     </div>
   );
 }

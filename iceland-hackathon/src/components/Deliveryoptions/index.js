@@ -15,7 +15,7 @@ let deliveryOptions =[{name:"Bike",score:4},{name:"Van",score:0,checked:true},{n
         <div className="deliveryoption">
             <p>{deliveryOption.name}</p>
             <p>{deliveryOption.score}</p>
-            <input type="radio" value={deliveryOption.score} checked={deliveryOption.checked?"checked":""} name="deliveryoption" onChange={()=>setdeliveryscore(deliveryOption.score)}/>
+            <input type="radio" value={deliveryOption.score} defaultChecked={deliveryOption.checked} name="deliveryoption" onChange={()=>setdeliveryscore(deliveryOption.score)}/>
         </div>
         
     )
