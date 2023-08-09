@@ -10,13 +10,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="shopfront">
+     <Mission/>
+     <ProductTile/>
+     <div className="shopfront">
         <Deliveryoptions />
         <Scoretotals />
       </div>
-     <Mission/>
-     <ProductTile/>
     </div>
+    
   );
 }
 
