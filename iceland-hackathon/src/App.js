@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header/header';
 import Mission from './components/Mission/mission';
+import ProductTile from './components/ProductTile/ProductTile';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
      {/* <Scoretotals/> */}
      <Header/>
      <Mission/>
+     <ProductTile/>
 
     </div>
   );
