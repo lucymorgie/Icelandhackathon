@@ -1,6 +1,5 @@
 import React from 'react';
 import './ProductTile.css';
-import TileImage from './TileImage.jpg'
 import ProductArray from '../../products';
 
 

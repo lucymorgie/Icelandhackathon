@@ -3,7 +3,11 @@
     justify-content: center;    
     background-color: #21A17E;
     height: 100px;
+
     position: fixed;
     width: 100%;
     top: 0;
+
+    color: #ffffff;
+
 }
