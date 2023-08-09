@@ -3,7 +3,8 @@ import './ProductTile.css';
 import TileImage from './TileImage.jpg'
 import ProductArray from '../../products';
 
-const ProductTile = () => {
+
+const ProductTile = ({setScoretotals,scoretotals}) => {
     const products = ProductArray.map((product, i) => {
         return (
             <div className="ProductTile" key={i}>
@@ -13,7 +14,7 @@ const ProductTile = () => {
             <h3 className="Discount">Discount: {product.discount}</h3>
             <h3 className="Price">Price:{product.price}</h3>
             <h3 className="EcoPoints">Gain Eco Points:{product.points}</h3>
-            <button className="AddToBasket">Add to Basket</button>
+            <button className="AddToBasket" onClick={()=>setScoretotals(scoretotals+product.points)}>Add to Basket</button>
         </div>
 
         )
