@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .App-logo {
@@ -35,4 +37,24 @@
   to {
     transform: rotate(360deg);
   }
+}
+.stickyfooter{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;  
+  width: 100%;
+  background-color: white;
+  border-top: 1px solid #282c34;
+}
+.deliveryoptions{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.score  span {
+  font-size: 2em;
+  font-weight: bold;
+  color: #21A17E;
 }

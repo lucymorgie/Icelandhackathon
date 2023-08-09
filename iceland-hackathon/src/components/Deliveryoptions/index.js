@@ -8,19 +8,20 @@ let deliveryOptions =[{name:"Bike",score:4},{name:"Van",score:0,checked:true},{n
     
 
     return (
+        
 
 
     deliveryOptions.map((deliveryOption) => {
     return (
         <div className="deliveryoption">
-            <p>{deliveryOption.name}</p>
-            <p>{deliveryOption.score}</p>
+            <p>{deliveryOption.name} ({deliveryOption.score} pts)</p>
             <input type="radio" value={deliveryOption.score} defaultChecked={deliveryOption.checked} name="deliveryoption" onChange={()=>setdeliveryscore(deliveryOption.score)}/>
         </div>
+       
         
     )
 
-    })
+})  
     
     )
 }

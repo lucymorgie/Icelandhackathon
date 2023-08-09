@@ -10,8 +10,7 @@ export default function  Scoretotals({scoretotals, deliveryscore}) {
 
     <div className="score">
 
-        <p>Score Total</p>
-        <p>{scoretotals + deliveryscore} Points</p>
+        <p id="score">Final Score Total <span >{scoretotals + deliveryscore} </span>Points</p>
     </div>
     )
     }
